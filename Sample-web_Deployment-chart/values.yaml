@@ -8,5 +8,6 @@ configmap:
     CUSTOM_HEADER: "This app was deployed using helm"
 
 image:
-  name: dhana20/demo-app
+  repository: dhana20/demo-app
+  name: ""
   tag: latest
