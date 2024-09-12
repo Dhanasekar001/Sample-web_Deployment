@@ -87,8 +87,8 @@ DOCKER_USERNAME: Your Docker Hub username.
 DOCKER_PASSWORD: Your Docker Hub password or access token.
 ```
 3. Verify Container Registry Access:
--Public Registry: If you are using a public container registry (like Docker Hub), make sure the image is publicly accessible and you’ve used the correct image name and tag.
--Private Registry: If you are using a private registry, ensure that Kubernetes has the correct credentials to access the registry. You might need to create a Kubernetes Secret with your registry credentials and reference it in your deployment.
+- Public Registry: If you are using a public container registry (like Docker Hub), make sure the image is publicly accessible and you’ve used the correct image name and tag.
+* Private Registry: If you are using a private registry, ensure that Kubernetes has the correct credentials to access the registry. You might need to create a Kubernetes Secret with your registry credentials and reference it in your deployment.
 To create a Docker registry secret, you can use the following command:
 ```
 kubectl create secret docker-registry my-registry-key \
