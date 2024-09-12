@@ -9,5 +9,4 @@ configmap:
 
 image:
   repository: dhana20/demo-app
-  name: ""
   tag: latest
