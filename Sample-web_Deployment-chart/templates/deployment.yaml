@@ -19,7 +19,7 @@ spec:
     spec: # Pod spec
       containers:
       - name: mycontainer
-        image: {{.Values.image.tag}}
+        image: {{.Values.image.repository}}:{{.Values.image.tag}}  
         ports:
         - containerPort: 80
         envFrom:
@@ -32,3 +32,5 @@ spec:
           limits:
             memory: "128Mi" # 128 mebibytes 
             cpu: "100m"
+      imagePullSecrets:
+      - name: my-registry-key
